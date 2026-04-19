@@ -1,0 +1,30 @@
+<section
+  id="depoimentos"
+  class="border-b border-white/5 bg-zinc-950 px-4 py-16 md:px-6 md:py-24"
+  aria-labelledby="testimonials-heading"
+>
+  <div class="mx-auto max-w-7xl">
+    <h2
+      id="testimonials-heading"
+      class="text-center text-3xl font-bold tracking-tight text-white md:text-4xl"
+    >
+      Depoimentos
+    </h2>
+    <p class="mx-auto mt-3 max-w-2xl text-center text-zinc-400">
+      Mulheres 40+ que queriam bem-estar de verdade — não promessa vazia de academia.
+    </p>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      @for (q of quotes; track q.text) {
+        <blockquote
+          class="flex flex-col rounded-2xl border border-white/10 bg-black/50 p-6"
+        >
+          <p class="flex-1 text-sm leading-relaxed text-zinc-300">“{{ q.text }}”</p>
+          <footer class="mt-4 text-xs font-semibold uppercase tracking-wider text-[#00df82]">
+            — {{ q.author }}
+          </footer>
+        </blockquote>
+      }
+    </div>
+  </div>
+</section>

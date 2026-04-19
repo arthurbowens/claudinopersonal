@@ -1,0 +1,60 @@
+<section
+  id="sobre"
+  class="border-b border-white/5 bg-black px-4 py-16 md:px-6 md:py-24"
+  aria-labelledby="about-heading"
+>
+  <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+    <div>
+      <h2
+        id="about-heading"
+        class="text-3xl font-bold tracking-tight text-white md:text-4xl"
+      >
+        Quem vai te acompanhar
+      </h2>
+      <span
+        class="mt-3 block h-0.5 w-12 rounded-full bg-emerald-800"
+        aria-hidden="true"
+      ></span>
+
+      <div class="mt-8 space-y-6 text-base leading-relaxed text-zinc-200">
+        <p>
+          Sou {{ site.trainerName }}, educador físico e personal trainer. Hoje eu trabalho
+          principalmente com <strong class="font-semibold text-white">mulheres acima de 40</strong>
+          — porque o treino precisa ser diferente: mais seguro, mais inteligente e alinhado ao que
+          você sente no corpo agora.
+        </p>
+        <p>
+          Meu foco não é “estética de feed”. É você com
+          <strong class="font-semibold text-white">barriga menor</strong>, mais
+          <strong class="font-semibold text-white">disposição</strong>, menos
+          <strong class="font-semibold text-white">dor</strong> e a sensação de voltar a se sentir
+          bem com o seu corpo — sem passar vergonha ao se olhar no espelho.
+        </p>
+        <p>
+          Atuo com treinos personalizados (online e presencial) adaptados à sua rotina e às suas
+          limitações — joelho, lombar, cansaço — para você evoluir sem se machucar e sem depender de
+          dieta maluca.
+        </p>
+        <p>
+          Acompanhamento próximo, ajustes semanais e conversa honesta: eu te ajudo a montar um
+          caminho sustentável — nada de treino genérico copiado da internet.
+        </p>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div
+        class="overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900/40 shadow-2xl"
+      >
+        <img
+          [src]="site.aboutImage"
+          alt="{{ site.trainerName }}, personal trainer para mulheres 40+"
+          width="800"
+          height="1000"
+          class="aspect-[4/5] w-full object-cover object-center"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>

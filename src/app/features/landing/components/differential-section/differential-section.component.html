@@ -1,0 +1,33 @@
+<section
+  id="diferencial"
+  class="border-b border-white/5 bg-black px-4 py-16 md:px-6 md:py-24"
+  aria-labelledby="diff-heading"
+>
+  <div class="mx-auto max-w-7xl">
+    <h2
+      id="diff-heading"
+      class="text-center text-3xl font-bold tracking-tight text-white md:text-4xl"
+    >
+      Diferencial
+    </h2>
+    <p class="mx-auto mt-3 max-w-2xl text-center text-zinc-400">
+      Treino pensado para a sua fase da vida — não para impressionar em rede social.
+    </p>
+
+    <ul class="mx-auto mt-12 grid max-w-3xl gap-4">
+      @for (point of points; track point) {
+        <li
+          class="flex gap-4 rounded-2xl border border-[#00df82]/20 bg-[#00df82]/5 px-5 py-4"
+        >
+          <span
+            class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#00df82] text-sm font-bold text-black"
+            aria-hidden="true"
+          >
+            ✓
+          </span>
+          <span class="text-base leading-relaxed text-zinc-100">{{ point }}</span>
+        </li>
+      }
+    </ul>
+  </div>
+</section>
