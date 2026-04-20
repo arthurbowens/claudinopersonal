@@ -6,8 +6,10 @@ export const SITE = {
   brandLine: 'claudino',
   brandAccent: 'PERSONAL',
   whatsappUrl: `https://wa.me/${WHATSAPP_NUMBER}`,
-  /** CTA curto no topo (mobile-friendly). */
+  /** CTA no header (telas ≥640px). */
   ctaNavWhatsApp: 'Quero começar agora',
+  /** Versão curta no header mobile (< sm) para não estourar a largura. */
+  ctaNavWhatsAppShort: 'Começar',
   /** Promessa + ação — botão principal do hero. */
   ctaHeroWhatsApp:
     'Quero secar a barriga em até 45 dias sem me machucar — WhatsApp agora',
